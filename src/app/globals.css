@@ -67,6 +67,7 @@ p {
 
 button {
   cursor: pointer;
+  font-family: var(--font-general);
 }
 
 @layer components {
@@ -87,6 +88,6 @@ button {
   }
 
   button {
-    @apply font-[General Sans] font-medium text-[14px] leading-[22px];
+    @apply font-medium text-[14px] leading-[22px];
   }
 }
