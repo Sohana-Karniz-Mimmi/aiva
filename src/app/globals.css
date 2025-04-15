@@ -1,26 +1,55 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fff;
+  --primary: #130929;
+  --secondary: #185ad9;
+  --paragraph: #64656d;
+  --caption: #fba017;
+  --color-primary-start: #5f90f0;
+  --color-primary-end: #185ad9;
+  --font-manrope: 'Manrope', sans-serif;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--primary);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-primary-start: var(--color-primary-start);
+  --color-primary-end: var(--color-primary-end);
+  --color-body: var(--paragraph);
+  --color-caption: var(--caption);
+  --font-manrope: var(--font-manrope);
 }
 
 @theme inline {
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-foreground: var(--primary);
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--primary);
+}
+
+.custom_container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media (min-width: 768px) {
+  .custom_container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .custom_container {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
