@@ -87,7 +87,20 @@ button {
     @apply text-[20px] leading-[28px] tracking-[0.42px] md:text-[32px] md:leading-[40px] md:tracking-[0.50px] lg:text-[38px] lg:leading-[46px] lg:tracking-[0.57px];
   }
 
-  button {
-    @apply font-medium text-[14px] leading-[22px];
+  h4 {
+    @apply text-[18px] leading-[26px] tracking-[0.27px] md:text-[22px] md:leading-[30px] md:tracking-[0.40px] lg:text-[26px] lg:leading-[34px] lg:tracking-[0.52px];
+  }  
+  
+  p {
+    @apply font-normal text-[14px] leading-[22px] md:text-[15px] md:leading-[23px] lg:text-[16px] lg:leading-[24px];
   }
+
+  button {
+    @apply font-medium text-[14px] leading-[22px] text-white;
+  }
+
+  .text_small {
+    @apply text-[12px] leading-[20px] md:text-[13px] md:leading-[21px] lg:text-[14px] lg:leading-[22px];
+  }
+  
 }
