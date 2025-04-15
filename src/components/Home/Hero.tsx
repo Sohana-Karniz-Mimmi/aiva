@@ -3,7 +3,7 @@ import React from 'react';
 const Hero = () => {
     return (
         <section className='custom_container'>
-            This is home page
+            This is Home page
         </section>
     );
 };
