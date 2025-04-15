@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: "aiva",
     images: [
       {
-        url: "/images/logo.png",
+        url: "/favicon.png",
         width: 1200,
         height: 630,
         alt: "AIVA - Your Marketplace for Bulk Products",

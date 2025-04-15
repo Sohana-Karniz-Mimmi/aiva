@@ -2,12 +2,15 @@
 
 :root {
   --background: #fff;
-  --primary: #130929;
-  --secondary: #185ad9;
-  --paragraph: #64656d;
-  --caption: #fba017;
-  --color-primary-start: #5f90f0;
-  --color-primary-end: #185ad9;
+  --primary: #634ab0;
+  --primary-hover: #4b319a;
+  --secondary: #858bec;
+  --heading: #0f193e;
+  --paragraph: rgba(15, 25, 62, 0.8);
+  --gradient-accent: linear-gradient(90deg, #858bec -29.62%, #7bd7ff 106.3%);
+  /* Accent Colors */
+  --accent-yellow: #faff00;
+  --accent-purple: #cb0eb8;
   --font-general: "General Sans", sans-serif;
   --font-polySans: "PolySans", sans-serif;
 }
@@ -27,44 +30,63 @@
 
 @theme {
   --color-background: var(--background);
-  --color-foreground: var(--primary);
   --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
   --color-secondary: var(--secondary);
-  --color-primary-start: var(--color-primary-start);
-  --color-primary-end: var(--color-primary-end);
+  --color-heading: var(--heading);
   --color-body: var(--paragraph);
-  --color-caption: var(--caption);
+  --color-gradient: var(--gradient-accent);
+  --color-accent-yellow: var(--accent-yellow);
+  --color-accent-purple: var(--accent-purple);
   --font-polySans: var(--font-polySans);
   --font-general: var(--font-general);
 }
 
 @theme inline {
   --color-background: var(--background);
-  --color-foreground: var(--primary);
 }
 
 body {
   background: var(--background);
-  color: var(--primary);
 }
 
-.custom_container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding-left: 24px;
-  padding-right: 24px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading);
+  font-family: var(--font-polySans);
 }
 
-@media (min-width: 768px) {
+p {
+  color: var(--paragraph);
+  font-family: var(--font-general);
+}
+
+button {
+  cursor: pointer;
+}
+
+@layer components {
   .custom_container {
-    padding-left: 32px;
-    padding-right: 32px;
+    @apply max-w-[1440px] mx-auto px-[16px] sm:px-[24px] md:px-[48px] lg:px-[100px];
   }
-}
 
-@media (min-width: 1280px) {
-  .custom_container {
-    padding-left: 0;
-    padding-right: 0;
+  h1 {
+    @apply text-[36px] leading-[44px] tracking-[0.54px] md:text-[45px] md:leading-[53px] md:tracking-[0.70px] lg:text-[50px] lg:leading-[58px] lg:tracking-[0.75px];
+  }
+
+  h2 {
+    @apply text-[28px] leading-[36px] tracking-[0.42px] md:text-[38px] md:leading-[46px] md:tracking-[0.60px] lg:text-[44px] lg:leading-[52px] lg:tracking-[0.66px];
+  }
+
+  h3 {
+    @apply text-[20px] leading-[28px] tracking-[0.42px] md:text-[32px] md:leading-[40px] md:tracking-[0.50px] lg:text-[38px] lg:leading-[46px] lg:tracking-[0.57px];
+  }
+
+  button {
+    @apply font-[General Sans] font-medium text-[14px] leading-[22px];
   }
 }
