@@ -39,7 +39,7 @@ const Hero = () => {
           </button>
 
           {/* Top Badge */}
-          <div className="absolute -top-[20px] left-1/2 transform -translate-x-1/2 flex w-[460px] max-w-full p-[8px] justify-center items-center font-general bg-[#FAFF00] rounded-[160px]">
+          <div className="absolute -top-[20px] left-1/2 transform -translate-x-1/2 flex w-[460px] max-w-full p-[8px] justify-center items-center font-general bg-accent-yellow rounded-[160px]">
             <span className="text-[14px] font-semibold leading-[22px] text-heading">
               Call AILANA now to experience next-gen customer engagement
             </span>
@@ -48,7 +48,7 @@ const Hero = () => {
         {/*call Button for mobile*/}
         <div className="block md:hidden relative">
           {/* Top Badge */}
-          <div className=" flex w-full max-w-[120px] mx-auto px-[10px] py-[8px] justify-center items-center font-general bg-[#FAFF00] rounded-[160px] mb-[7px]">
+          <div className=" flex w-full max-w-[120px] mx-auto px-[10px] py-[8px] justify-center items-center font-general bg-accent-yellow rounded-[160px] mb-[7px]">
             <span className="text-[12px] font-semibold leading-[20px] text-heading font-general">
               Call AILANA Now
             </span>
