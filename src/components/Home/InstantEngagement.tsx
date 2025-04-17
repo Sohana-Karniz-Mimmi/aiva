@@ -74,7 +74,7 @@ const InstantEngagement = () => {
               ))}
             </h2>
 
-            {selectedContent.details.map((text, i) => (
+            {selectedContent.description.map((text, i) => (
               <p
                 key={i}
                 className={`${
