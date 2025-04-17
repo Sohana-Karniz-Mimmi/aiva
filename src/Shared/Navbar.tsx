@@ -11,10 +11,33 @@ import React, { useState, useEffect } from "react";
 const Navbar = () => {
   const currentPath = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // const [windowSize, setWindowSize] = useState({
+  //   width: typeof window !== "undefined" ? window.innerWidth : 0,
+  //   height: typeof window !== "undefined" ? window.innerHeight : 0,
+  // });
+
   const [windowSize, setWindowSize] = useState({
-    width: typeof window !== "undefined" ? window.innerWidth : 0,
-    height: typeof window !== "undefined" ? window.innerHeight : 0,
+    width: 0,
+    height: 0,
   });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+
+      if (window.innerWidth >= 1024) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    handleResize(); // run once on mount to set size
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const navLinks = [
     { name: "The AILANA", path: "/" },
@@ -89,7 +112,9 @@ const Navbar = () => {
         )}
 
         {/*  Button (shows on tablet and desktop) */}
-        {isDesktop && <Button className=" w-9 h-9" buttonClassName="max-w-[185px]" />}
+        {isDesktop && (
+          <Button className=" w-9 h-9" buttonClassName="max-w-[185px]" />
+        )}
 
         {/* Mobile Menu Button (shows only on mobile) */}
         {(isTablet || isMobile) && (
