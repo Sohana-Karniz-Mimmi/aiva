@@ -19,7 +19,8 @@ const Hero = () => {
       {/* Content Overlay */}
       <div className="absolute inset-0 flex flex-col items-center md:justify-center text-center px-[16px] xl:mb-[42px] md:mt-0 mt-[132px]">
         {/* Title */}
-        <h1 className="max-w-[1070px] mb-[52px] md:mb-[30px]">
+        <h1 className="max-w-[1070px] mb-[52px] md:mb-[30px]
+        text-[28px] leading-[36px] tracking-[0.42px] md:text-[45px] md:leading-[53px] md:tracking-[0.70px] lg:text-[50px] lg:leading-[58px] lg:tracking-[0.75px] font-bold md:h-auto h-[144px]">
           Empower Your Business with AILANA: Your 24/7 Multilingual Ally
         </h1>
 

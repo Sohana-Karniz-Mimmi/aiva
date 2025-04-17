@@ -1,6 +1,7 @@
 import Hero from "@/components/Home/Hero";
 import Revolutionize from "@/components/Home/Revolutionize/Revolutionize";
 import Solution from "@/components/Home/Solution/Solution";
+import Unleashing from "@/components/Home/Unleashing";
 
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero />
       <Revolutionize />
       <Solution />
+      <Unleashing />
     </main>
   );
 }

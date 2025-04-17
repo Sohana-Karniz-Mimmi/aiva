@@ -89,7 +89,7 @@ const Navbar = () => {
         )}
 
         {/*  Button (shows on tablet and desktop) */}
-        {isDesktop && <Button />}
+        {isDesktop && <Button className=" w-9 h-9" buttonClassName="max-w-[185px]" />}
 
         {/* Mobile Menu Button (shows only on mobile) */}
         {(isTablet || isMobile) && (
@@ -136,7 +136,7 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Button */}
-            <Button />
+            <Button className=" w-9 h-9" buttonClassName="max-w-[185px]" />
           </div>
         </div>
       )}

@@ -22,6 +22,14 @@
   font-style: normal;
 }
 
+/* @font-face {
+  font-family: "PolySans";
+  src: url("/fonts/PolySansMedian.ttf") format("truetype");
+  font-weight: 400 500 600 700;
+  font-display: swap;
+  font-style: normal;
+} */
+
 @font-face {
   font-family: "General Sans";
   src: url("/fonts/GeneralSans-Variable.ttf") format("truetype");

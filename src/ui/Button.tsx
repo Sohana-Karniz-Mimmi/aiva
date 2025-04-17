@@ -30,13 +30,13 @@ const Button = ({
       </defs>
     </svg>
   ),
-  onClick = () => {},
+  // onClick = () => {},
 }) => (
   <button
-    onClick={onClick}
-    className={`inline-flex max-w-[185px] h-[44px] pl-[4px] pr-[16px] py-[16px] items-center gap-2 rounded-[100px] bg-primary hover:bg-primary-hover ${buttonClassName} ${className}`}
+    // onClick={onClick}
+    className={` ${buttonClassName} inline-flex h-[44px] pl-[4px] pr-[16px] py-[16px] items-center gap-[8px] rounded-[100px] bg-primary hover:bg-primary-hover`}
   >
-    <span className="flex w-9 h-9 p-[10px] justify-center items-center rounded-[60px] bg-white">
+    <span className={`flex p-[10px] justify-center items-center rounded-[60px] bg-white ${className}`}>
       {icon}
     </span>
     {text}
