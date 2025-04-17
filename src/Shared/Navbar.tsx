@@ -35,6 +35,8 @@ const Navbar = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  
+
   const navLinks = [
     { name: "The AILANA", path: "/" },
     { name: "About", path: "/about" },
