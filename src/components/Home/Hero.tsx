@@ -46,9 +46,8 @@ const Hero = () => {
             </span>
           </div>
         </div>
-        {/*call Button for mobile*/}
+        {/* Button for mobile*/}
         <div className="block md:hidden relative">
-          {/* Top Badge */}
           <div className=" flex w-full max-w-[120px] mx-auto px-[10px] py-[8px] justify-center items-center font-general bg-accent-yellow rounded-[160px] mb-[7px]">
             <span className="text-[12px] font-semibold leading-[20px] text-heading font-general">
               Call AILANA Now
