@@ -1,3 +1,4 @@
+import Features from "@/components/Home/Features";
 import Hero from "@/components/Home/Hero";
 import Revolutionize from "@/components/Home/Revolutionize/Revolutionize";
 import Solution from "@/components/Home/Solution/Solution";
@@ -11,6 +12,7 @@ export default function Home() {
       <Revolutionize />
       <Solution />
       <Unleashing />
+      <Features />
     </main>
   );
 }

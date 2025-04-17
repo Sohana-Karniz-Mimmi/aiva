@@ -11,10 +11,6 @@ import React, { useState, useEffect } from "react";
 const Navbar = () => {
   const currentPath = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  // const [windowSize, setWindowSize] = useState({
-  //   width: typeof window !== "undefined" ? window.innerWidth : 0,
-  //   height: typeof window !== "undefined" ? window.innerHeight : 0,
-  // });
 
   const [windowSize, setWindowSize] = useState({
     width: 0,
@@ -33,7 +29,7 @@ const Navbar = () => {
       }
     };
 
-    handleResize(); // run once on mount to set size
+    handleResize();
 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -53,7 +49,6 @@ const Navbar = () => {
         width: window.innerWidth,
         height: window.innerHeight,
       });
-      // Close menu when resizing to desktop
       if (window.innerWidth >= 1024) {
         setIsMenuOpen(false);
       }
@@ -74,7 +69,6 @@ const Navbar = () => {
 
   return (
     <header className="custom_container">
-      {/* Navbar for all screen sizes */}
       <nav
         className={`fixed top-[20px] left-1/2 transform -translate-x-1/2 z-50 w-[calc(100%-32px)] max-w-[1240px] md:min-h-[60px] min-h-[52px] rounded-[50px] flex items-center justify-between md:pl-[22px] pl-[25px] md:pr-[8px] pr-[4px] ${
           isMenuOpen ? "bg-white" : "bg-white/60 backdrop-blur"
@@ -87,7 +81,6 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Desktop Navigation (shows on tablet and desktop) */}
         {isDesktop && (
           <div className="flex items-center gap-6 md:gap-[30px]  h-8 justify-center xl:ml-[68px]">
             {navLinks.map((link) => (
@@ -111,12 +104,10 @@ const Navbar = () => {
           </div>
         )}
 
-        {/*  Button (shows on tablet and desktop) */}
         {isDesktop && (
           <Button className=" w-9 h-9" buttonClassName="max-w-[185px]" />
         )}
 
-        {/* Mobile Menu Button (shows only on mobile) */}
         {(isTablet || isMobile) && (
           <button
             onClick={toggleMenu}
@@ -128,7 +119,6 @@ const Navbar = () => {
         )}
       </nav>
 
-      {/* Mobile Menu Drawer (only on mobile) */}
       {(isTablet || isMobile) && (
         <div
           className={`fixed top-0 left-0 z-40 w-full h-full transition-opacity duration-300 ${
@@ -142,7 +132,6 @@ const Navbar = () => {
             }`}
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Mobile Navigation Links */}
             <div className="flex flex-col gap-[20px]">
               {navLinks.map((link) => (
                 <Link
@@ -160,7 +149,6 @@ const Navbar = () => {
               ))}
             </div>
 
-            {/* Mobile Button */}
             <Button className=" w-9 h-9" buttonClassName="max-w-[185px]" />
           </div>
         </div>
