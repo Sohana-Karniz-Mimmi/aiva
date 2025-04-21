@@ -112,7 +112,7 @@ const Navbar = () => {
         {(isTablet || isMobile) && (
           <button
             onClick={toggleMenu}
-            className="flex w-[44px] h-[44px] p-[13px] items-center justify-center gap-[10px] rounded-[50px] bg-[#0F193E] backdrop-blur"
+            className="flex w-[44px] h-[44px] p-[13px] items-center justify-center gap-[10px] rounded-[50px] bg-heading backdrop-blur"
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           >
             {isMenuOpen ? <CloseIcon /> : <MenuIcon />}

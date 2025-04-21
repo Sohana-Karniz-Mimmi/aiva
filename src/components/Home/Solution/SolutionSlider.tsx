@@ -45,7 +45,7 @@ const SolutionSlider = () => {
       <div
         ref={sliderRef}
         className="ml-auto flex gap-[13px] lg:gap-[20px] overflow-hidden snap-x snap-mandatory py-[40px] lg:py-[60px] scrollbar-hide pl-[16px] sm:pl-[24px] md:pl-[48px] xl:pl-0 w-[calc(100%-16px)] sm:w-[calc(100%-24px)] md:w-[calc(100%-48px)] xl:w-full max-w-[1338px]"
-        style={{ scrollBehavior: "smooth" }}
+        // style={{ scrollBehavior: "smooth" }}
       >
         {sliders.map((slider, index) => (
           <div
@@ -61,7 +61,7 @@ const SolutionSlider = () => {
                 </div>
               </div>
 
-              <p className=" max-w-[260px] lg:max-w-[445px] ">{slider.text}</p>
+              <p className="max-w-[260px] lg:max-w-[445px]">{slider.text}</p>
             </div>
           </div>
         ))}

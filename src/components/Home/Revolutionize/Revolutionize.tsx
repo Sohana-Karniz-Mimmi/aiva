@@ -21,10 +21,9 @@ const Revolutionize = () => {
             Virtual Agent
           </h2>
           <p className="w-full">
-            Our product is more than just a solution—it's an intelligent AI
-            Virtual Agent set to transform customer experiences by replacing
-            outdated IVR systems. Say goodbye to the status quo and usher in a
-            new era of customer interactions.
+            {`Our product is more than just a solution—it's an intelligent AI
+              Virtual Agent set to transform customer experiences by replacing
+              outdated IVR systems. Say goodbye to the status quo and usher in a new era of customer interactions.`}
           </p>
         </div>
       </div>

@@ -13,7 +13,7 @@ const Unleashing = () => {
           </h2>
 
           <div className="w-full pt-[20px] lg:pt-[30px] pb-[20px] lg:pb-[120px]">
-            <p className=" md:mb-[22px] mb-[20px]">
+            <p className="md:mb-[22px] mb-[20px]">
               The McKinsey Research emphasizes the significant impact of
               Generation AI (Gen AI) on customer care, projecting potential
               productivity gains of 30% to 40% of current function costs.

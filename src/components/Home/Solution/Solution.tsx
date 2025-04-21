@@ -12,7 +12,6 @@ const Solution = () => {
           alt="Solution Background"
           fill
           className="object-cover w-full h-full"
-          sizes="(max-width: 768px) 375px, 1440px"
         />
       </div>
 
@@ -20,7 +19,7 @@ const Solution = () => {
       <div className="relative z-10 py-[60px] lg:py-[100px]">
         <div className="custom_container">
           {/* Title */}
-          <h2 className=" max-w-full lg:max-w-[925px] ">
+          <h2 className="max-w-full lg:max-w-[925px]">
             Unmatched Advantages: <br />
             Why Our Solution Stands Out
           </h2>

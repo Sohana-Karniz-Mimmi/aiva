@@ -48,8 +48,8 @@ const Hero = () => {
         </div>
         {/* Button for mobile*/}
         <div className="block md:hidden relative">
-          <div className=" flex w-full max-w-[120px] mx-auto px-[10px] py-[8px] justify-center items-center font-general bg-accent-yellow rounded-[160px] mb-[7px]">
-            <span className="text-[12px] font-semibold leading-[20px] text-heading font-general">
+          <div className="flex w-full max-w-[120px] mx-auto px-[10px] py-[8px] justify-center items-center font-general bg-accent-yellow rounded-[160px] mb-[7px]">
+            <span className="text-[12px] font-semibold leading-[20px] text-heading font-general capitalize">
               Call AILANA Now
             </span>
           </div>
