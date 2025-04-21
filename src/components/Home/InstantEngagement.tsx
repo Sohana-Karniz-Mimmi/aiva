@@ -5,11 +5,12 @@ import Image from "next/image";
 import { useState } from "react";
 
 const InstantEngagement = () => {
-  const [selectedKey, setSelectedKey] = useState("verticals");
-  const selectedContent = contentList.find((item) => item.key === selectedKey) || contentList[0];
+  const [selectedKey, setSelectedKey] = useState("1");
+  const selectedContent =
+    contentList.find((item) => item.id === selectedKey) || contentList[0];
 
   return (
-    <section className="bg-background max-w-[1440px] mx-auto py-[60px] md:py-[80px] lg:py-[120px] px-4 md:px-6 xl:px-0 relative">
+    <section className="custom_container py-[60px] md:py-[80px] lg:py-[120px] relative">
       <h1 className="text-[28px] md:text-[44px] leading-[36px] md:leading-[52px] font-polySans font-bold tracking-[0.42px] md:tracking-[0.66px] text-center max-w-[976px] mx-auto mb-[20px] md:mb-[30px]">
         Instant Engagement Across Industries
       </h1>
@@ -23,12 +24,12 @@ const InstantEngagement = () => {
       <div className="max-w-[1240px] mx-auto">
         <div className="overflow-x-auto rounded-[20px]">
           <div className="flex min-w-[1240px] items-center gap-[35px] h-[80px] md:h-[90px] bg-[rgba(70,111,255,0.05)] rounded-[20px] p-[6px] md:p-[10px]">
-            {contentList.map(({ key, label }) => (
+            {contentList.map(({ id, label }) => (
               <button
-                key={key}
-                onClick={() => setSelectedKey(key)}
+                key={id}
+                onClick={() => setSelectedKey(id)}
                 className={`text-start md:text-center text-[14px] md:text-[15px] leading-[22px] md:leading-[24px] font-general-sans text-heading flex justify-center items-center w-[163px] md:w-full ${
-                  selectedKey === key
+                  selectedKey === id
                     ? "md:min-w-[328px] h-[68px] md:h-[70px] p-[12px] md:p-[21px] rounded-[14px] md:rounded-[10px] shadow-[0px_0px_14px_0px_rgba(15,25,62,0.08)] bg-white font-semibold md:text-[16px]"
                     : ""
                 }`}

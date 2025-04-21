@@ -1,6 +1,6 @@
 export const contentList = [
   {
-    key: "verticals",
+    id: "1",
     label: "Instant Engagement Across Verticals",
     headline: "Instant Engagement\nAcross Verticals",
     description: [
@@ -13,7 +13,7 @@ export const contentList = [
     },
   },
   {
-    key: "banking",
+    id: "2",
     label: "Community Banks & Credit Unions",
     headline: "Community Banks &\nCredit Unions",
     description: [
@@ -26,7 +26,7 @@ export const contentList = [
     },
   },
   {
-    key: "insurance",
+    id: "3",
     label: "Streamlining Insurance Services",
     headline: "Streamlining Insurance\nServices",
     description: [
@@ -39,7 +39,7 @@ export const contentList = [
     },
   },
   {
-    key: "realtors",
+    id: "4",
     label: "Dynamic Realtor Communications",
     headline: "Dynamic Realtor\nCommunications",
     description: [

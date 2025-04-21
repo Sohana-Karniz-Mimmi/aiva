@@ -1,3 +1,4 @@
+import EncourageAction from "@/components/Home/EncourageAction";
 import Features from "@/components/Home/Features";
 import Hero from "@/components/Home/Hero";
 import HowItWork from "@/components/Home/HowItWorks";
@@ -17,6 +18,7 @@ export default function Home() {
       <Features />
       <InstantEngagement />
       <HowItWork />
+      <EncourageAction />
     </main>
   );
 }
