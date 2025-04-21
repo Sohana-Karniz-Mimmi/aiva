@@ -31,11 +31,16 @@ const Unleashing = () => {
           </div>
 
           {/* Button */}
-          <Button
-            className="p-[13.33px]"
-            buttonClassName="max-w-[198px] h-[58px]"
-            iconClassName="w-[22.262px] h-[22.262px]"
-          />
+          <div className="hidden md:flex">
+            <Button
+              className="p-[13.33px]"
+              buttonClassName="max-w-[198px] h-[58px]"
+              iconClassName="w-[22.262px] h-[22.262px]"
+            />
+          </div>
+          <div className="flex md:hidden">
+            <Button className="w-9 h-9" buttonClassName="max-w-[185px]" />
+          </div>
         </div>
 
         {/*  Image */}

@@ -80,10 +80,10 @@ const SolutionSlider = () => {
               }}
               className={`w-[5px] lg:w-[10px] h-[5px] lg:h-[10px] rounded-full ${
                 index === currentSlide
-                  ? "bg-[#0F193E]"
+                  ? "bg-heading"
                   : "bg-[rgba(15,25,62,0.2)]"
               }`}
-              aria-label={`Go to slide ${index + 1}`}
+              aria-label={`go-to-slide ${index + 1}`}
             />
           ))}
         </div>

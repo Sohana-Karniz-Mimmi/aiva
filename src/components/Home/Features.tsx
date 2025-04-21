@@ -131,7 +131,7 @@ const Features = () => {
                       <p
                         className={`text-[20px] lg:text-[26px] leading-[28px] lg:leading-[34px] font-general  ${
                           activeFeature === feature.title
-                            ? "font-semibold !text-[#0F193E]"
+                            ? "font-semibold !text-heading"
                             : "font-normal text-[rgba(15,25,62,0.80)]"
                         }`}
                       >
@@ -151,7 +151,7 @@ const Features = () => {
 
                     {activeFeature === feature.title && (
                       <>
-                        <p className="mt-[12px] md:mt-[20px] text-[#0F193E]">
+                        <p className="mt-[12px] md:mt-[20px] text-heading">
                           {feature.description}
                         </p>
                       </>
