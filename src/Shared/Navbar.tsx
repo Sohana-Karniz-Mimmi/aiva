@@ -71,7 +71,7 @@ const Navbar = () => {
   return (
     <header className="custom_container">
       <nav
-        className={`fixed top-[20px] left-1/2 transform -translate-x-1/2 z-50 w-[calc(100%-32px)] max-w-[1240px] md:min-h-[60px] min-h-[52px] rounded-[50px] flex items-center justify-between md:pl-[22px] pl-[25px] md:pr-[8px] pr-[4px] ${
+        className={`fixed top-[20px] left-1/2 transform -translate-x-1/2 z-50 w-[calc(100%-32px)] max-w-[1240px] md:min-h-[60px] min-h-[52px] rounded-[50px] flex items-center justify-between md:pl-[22px] pl-[20px] md:pr-[8px] pr-[4px] ${
           isMenuOpen ? "bg-white" : "bg-white/60 backdrop-blur"
         }`}
       >

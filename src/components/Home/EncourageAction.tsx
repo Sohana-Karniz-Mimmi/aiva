@@ -38,7 +38,7 @@ const EncourageAction = () => {
             </div>
 
             <div className="flex md:hidden justify-center mt-[64px] relative">
-              <div className="text-[12px] font-general-sans font-semibold leading-[20px] w-[120px] h-[36px] rounded-full bg-quinary flex justify-center items-center absolute p-[8px] top-0">
+              <div className="text-[12px] font-general-sans font-semibold leading-[20px] w-[120px] h-[36px] rounded-full bg-accent-yellow flex justify-center items-center absolute p-[8px] top-0">
                 Call AILANA now
               </div>
 
